@@ -1,0 +1,39 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+
+  h2{
+    color: var(--color-white);
+    font-size: 1.75em;
+    font-family: barlow-700;
+    font-weight: 700;
+  }
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
+
+    .nav-item{
+      padding: .5em 1.5em;
+      color: var(--color-white);
+      cursor: pointer;
+
+      &:last-child{
+        border: 1px solid var(--color-white);
+        border-radius: 2em;
+        background-color: var(--color-white);;
+        color: var(--color-black);
+        font-family: fraunces;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -.11px;
+
+        &:hover{
+          background-color: var(--color-blue-300);
+          border: 1px solid var(--color-blue-300);
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}

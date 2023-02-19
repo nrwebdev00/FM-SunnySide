@@ -1,0 +1,45 @@
+.arrow {
+
+  width: 100px;
+  height: 100px;
+  margin: 5% 0 0 47%;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 80%;
+    left: 50%;
+    border-style: solid;
+    border-color: var(--color-white);
+    border-width: 6px 6px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  &.down::before {
+    transform: rotate(135deg);
+    margin: 0px 0 0 -13px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    top: 0%;
+    left: 50%;
+    border-style: solid;
+    border-color: var(--color-white);
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  &.down::after {
+    width: 0;
+    height: 134px;
+    border-width: 0 6px 0 0;
+    transform: translate(-1px, -26px);
+  }
+}

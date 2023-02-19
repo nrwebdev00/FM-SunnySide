@@ -1,0 +1,19 @@
+.main-header{
+  background-image: url('../../public/img/desktop/image-header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+  padding: 1em;
+
+    .header-title{
+      display: flex;
+      justify-content: center;
+      margin-top: 1.75em;
+      font-family: fraunces;
+      font-size: 3.1em;
+      color: white;
+      letter-spacing: 8.75px;
+      text-transform: uppercase;
+    }
+}
