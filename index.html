@@ -10,10 +10,10 @@
   <body>
 
     <header class="main-header">
+      <!-- Component - NavBar.scss -->
       <nav class="navbar">
         <img src="./public/img/logo.svg" alt="">
-        <img src="./public/img/icon-hamburger.svg
-        " alt="" class="mobile-menu" id="menu-button">
+        <img src="./public/img/icon-hamburger.svg" alt="" class="mobile-menu-button" id="menu-button">
         <ul type="list">
          <li class="nav-item">About</li>
          <li class="nav-item">Services</li>
@@ -21,12 +21,20 @@
          <li class="nav-item">Contact</li>
         </ul>
       </nav>
-
-      <h1 class="header-title">
+      <!-- Component - NavBar.scss -->
+      <div class="mobile-menu display-none" id="mobile-menu">
+        <ul class="mobile-nav">
+          <li class="mobile-nav-item">About</li>
+          <li class="mobile-nav-item">Services</li>
+          <li class="mobile-nav-item">Projects</li>
+          <li class="mobile-nav-item">Contact</li>
+        </ul>
+      </div>
+      <!-- Pages - Index.scss -->
+      <h1 class="header-title" id="header-title">
         We are creatives
       </h1>
-
-      <div class="arrow-wrapper">
+      <div class="arrow-wrapper" id="arrow-wrapper">
         <img src="./public/img/icon-arrow-down.svg" alt="">
       </div>
     </header>

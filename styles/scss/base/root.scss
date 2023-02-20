@@ -11,8 +11,8 @@
   --color-blue-700: #23303e;
 
   --color-slate-500: #a7abae;
-  --color-slate-700: #888c91;
-  --color-slate-900: #5a636c;
+  --color-slate-700: hsl(232, 10%, 55%);
+  --color-slate-900: hsl(210, 9%, 39%);
 
  --color-black: hsl(212, 27%, 19%);
   --color-white: hsl(0, 0%, 100%);
@@ -36,4 +36,8 @@
 html, body{
   font-family: barlow;
   font-size: 18px;
+}
+
+.display-none{
+  display: none !important;
 }
