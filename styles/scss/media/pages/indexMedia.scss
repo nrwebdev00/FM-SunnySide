@@ -1,0 +1,13 @@
+@media screen and (max-width: 375px) {
+
+  .main-header{
+    background-image: url('../../../../public/img/mobile/image-header.jpg');
+  }
+
+  .navbar{
+
+    ul{
+      display: none;
+    }
+  }
+}

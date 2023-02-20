@@ -2,16 +2,11 @@
   display: flex;
   justify-content: space-between;
 
-  h2{
-    color: var(--color-white);
-    font-size: 1.75em;
-    font-family: barlow-700;
-    font-weight: 700;
-  }
   ul{
     display: flex;
     justify-content: flex-end;
-    gap: 1.5em;
+    gap: .5em;
+    margin-right: .5em;
 
     .nav-item{
       padding: .5em 1.5em;

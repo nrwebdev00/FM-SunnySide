@@ -3,8 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 75vh;
-  padding: 1em;
+  padding: 1em 1em 15em 1em;
 
     .header-title{
       display: flex;
@@ -16,4 +15,16 @@
       letter-spacing: 8.75px;
       text-transform: uppercase;
     }
+
+    .arrow-wrapper{
+      margin-top: 5em;
+      display: flex;
+      justify-content: center;
+    }
+}
+
+
+
+.mobile-menu{
+  display: none;
 }

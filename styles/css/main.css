@@ -54,8 +54,7 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 75vh;
-  padding: 1em;
+  padding: 1em 1em 15em 1em;
 }
 .main-header .header-title {
   display: flex;
@@ -67,21 +66,25 @@ html, body {
   letter-spacing: 8.75px;
   text-transform: uppercase;
 }
+.main-header .arrow-wrapper {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu {
+  display: none;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
 }
-.navbar h2 {
-  color: var(--color-white);
-  font-size: 1.75em;
-  font-family: barlow-700;
-  font-weight: 700;
-}
 .navbar ul {
   display: flex;
   justify-content: flex-end;
-  gap: 1.5em;
+  gap: 0.5em;
+  margin-right: 0.5em;
 }
 .navbar ul .nav-item {
   padding: 0.5em 1.5em;
@@ -104,45 +107,14 @@ html, body {
   color: var(--color-white);
 }
 
-.arrow {
-  width: 100px;
-  height: 100px;
-  margin: 5% 0 0 47%;
-  display: inline-block;
-  position: relative;
-}
-.arrow::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  top: 80%;
-  left: 50%;
-  border-style: solid;
-  border-color: var(--color-white);
-  border-width: 6px 6px 0 0;
-  position: absolute;
-  transform-origin: 50% 50%;
-}
-.arrow.down::before {
-  transform: rotate(135deg);
-  margin: 0px 0 0 -13px;
-}
-.arrow::after {
-  content: "";
-  display: block;
-  top: 0%;
-  left: 50%;
-  border-style: solid;
-  border-color: var(--color-white);
-  position: absolute;
-  transform-origin: 50% 50%;
-}
-.arrow.down::after {
-  width: 0;
-  height: 134px;
-  border-width: 0 6px 0 0;
-  transform: translate(-1px, -26px);
+@media screen and (max-width: 375px) {
+  .main-header {
+    background-image: url("../../../../public/img/mobile/image-header.jpg");
+  }
+
+  .navbar ul {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
